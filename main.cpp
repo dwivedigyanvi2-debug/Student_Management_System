@@ -47,3 +47,14 @@ void addStudent( vector<Student>& students){
 
     cout<<"\n--Student Added--\n";
 }
+
+void addStudents(vector<Student>& students){
+    if(students.empty()){
+        cout<<"\n--No students found--\n";
+        return;
+    }
+
+    for( Students s : students){
+        s.display();
+    }
+}
